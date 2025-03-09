@@ -110,7 +110,7 @@ if page == "Heart Disease prediction model":
 
         prediction = model.predict(input_data).flatten()
 
-        if Ldl > 200 and Hdl  > 230 and cholesterol > 200 and bloodp > 200:
+        if Ldl >= 200 and Hdl  >= 200 and cholesterol >= 120 and bloodp >= 150:
             prediction = [1]
 
         if prediction[0] == 1:
